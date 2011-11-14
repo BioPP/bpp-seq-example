@@ -6,3 +6,6 @@ all:
 
 clean:
 	-for d in $(DIRS); do (echo Cleaning in $$d; cd $$d; $(MAKE) clean ); done
+
+apidoc:
+	doxygen Doxyfile
