@@ -1,6 +1,6 @@
 DIRS = ExAlphabet ExSequence ExContainer
 MAKE = make
-BIOPP_PATH = /tmp/bpp-crash-test/
+BIOPP_PATH = /tmp/bpp-crash-test/.local
 
 all:
 	-for d in $(DIRS); do (echo Building in $$d; cd $$d; $(MAKE) BIOPP_PATH=$(BIOPP_PATH)); done
