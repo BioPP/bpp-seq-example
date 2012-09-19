@@ -125,7 +125,7 @@ int main(int args, char ** argv)
      * ISequence objects have a method 'read' that creates a container from a file and an alphabet.
      */
     Fasta fasReader;
-    OrderedSequenceContainer* sequences = fasReader.read("TIMnuc.aln.fasta", &AlphabetTools::DNA_ALPHABET);
+    OrderedSequenceContainer* sequences = fasReader.readSequences("TIMnuc.aln.fasta", &AlphabetTools::DNA_ALPHABET);
     cout << "This container has " << sequences->getNumberOfSequences() << " sequences." << endl;
     cout << "Is that an alignment? " << (SequenceContainerTools::sequencesHaveTheSameLength(*sequences) ? "yes" : "no") << endl;
 
