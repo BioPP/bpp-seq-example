@@ -2,7 +2,6 @@
  * File: ExAlphabet.cpp
  * Created by: Julien Dutheil
  * Created on: Dec Mon 01 13:33 2008
- * Last modified: Jun Thu 04 07:05 2009
  * 
  * Introduction to the Alphabet class, and a bit of propaganda on good habits to take!
  *
@@ -29,7 +28,7 @@
 using namespace std;
 
 /*
- * From SeqLib:
+ * From bpp-seq:
  */
 #include <Bpp/Seq/Alphabet.all> /* this include all alphabets in one shot */
 

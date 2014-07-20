@@ -2,7 +2,6 @@
  * File: ExContainer.cpp
  * Created by: Julien Dutheil
  * Created on: Dec Fri 05 11:54 2008
- * Last modified: Jun Fri 05 11:49 2009
  * 
  * Introduction to the Container classes, and reader/writing from sequence files.
  *
@@ -29,12 +28,12 @@
 using namespace std;
 
 /*
- * From SeqLib:
+ * From bpp-seq:
  */
 #include <Bpp/Seq/Alphabet.all> /* this includes all alphabets in one shot */
 #include <Bpp/Seq/Container.all> /* this includes all containers */
 #include <Bpp/Seq/Io.all> /* this includes all sequence readers and writers */
-#include <Bpp/Seq/StateProperties/DefaultNucleotideScore.h>
+#include <Bpp/Seq/AlphabetIndex/DefaultNucleotideScore.h>
 
 /*
  * We'll need a few tools from the Bio++ core library:
@@ -125,7 +124,7 @@ int main(int args, char ** argv)
      * ISequence objects have a method 'read' that creates a container from a file and an alphabet.
      */
     Fasta fasReader;
-    OrderedSequenceContainer* sequences = fasReader.read("TIMnuc.aln.fasta", &AlphabetTools::DNA_ALPHABET);
+    OrderedSequenceContainer* sequences = fasReader.readSequences("TIMnuc.aln.fasta", &AlphabetTools::DNA_ALPHABET);
     cout << "This container has " << sequences->getNumberOfSequences() << " sequences." << endl;
     cout << "Is that an alignment? " << (SequenceContainerTools::sequencesHaveTheSameLength(*sequences) ? "yes" : "no") << endl;
 

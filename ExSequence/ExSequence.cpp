@@ -2,7 +2,6 @@
  * File: ExSequence.cpp
  * Created by: Julien Dutheil
  * Created on: Dec Tue 03 17:13 2008
- * Last modified: Jun Thu 04 07:09 2009
  * 
  * Introduction to the Sequence class.
  *
@@ -33,8 +32,8 @@ using namespace std;
  */
 #include <Bpp/Seq/Alphabet.all> /* this include all alphabets in one shot */
 #include <Bpp/Seq/Sequence.h> /* this include the definition of the Sequence object */
-#include <Bpp/Seq/SequenceTools.h> /* this include some tool sto deal with sequences */
-#include <Bpp/Seq/DNAToRNA.h> /* A few translators here... */
+#include <Bpp/Seq/SequenceTools.h> /* this includes some tools to deal with sequences */
+#include <Bpp/Seq/DNAToRNA.h> /* A few transliterators here... */
 #include <Bpp/Seq/NucleicAcidsReplication.h>
 #include <Bpp/Seq/GeneticCode/StandardGeneticCode.h>
 
@@ -186,7 +185,7 @@ int main(int args, char ** argv)
     delete codonAlphabet;
 
     /*
-     * To make more complexe deparsing/reparsing, you need *Translator* objects.
+     * To make more complex deparsing/reparsing, you need *Transliterator* objects.
      * These objects allow you to convert from an alphabet to another in a very general way.
      *
      * Example 1: changing DNA to RNA:
