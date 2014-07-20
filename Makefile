@@ -1,4 +1,4 @@
-DIRS = ExAlphabet ExSequence ExContainer
+DIRS = ExAlphabet ExSequence ExContainer ExGeneticCode
 MAKE = make
 BIOPP_PATH = /tmp/bpp-crash-test/.local
 
