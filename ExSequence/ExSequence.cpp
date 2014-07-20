@@ -74,8 +74,8 @@ int main(int args, char ** argv)
     }
 
     //Writes a dot plot:
-    for (unsigned int i = 0; i < sequence->size(); i++) {
-      for (unsigned int j = 0; j < sequence->size(); j++) {
+    for (size_t i = 0; i < sequence->size(); i++) {
+      for (size_t j = 0; j < sequence->size(); j++) {
         if (sequence->getChar(i) == sequence->getChar(j))
           cout << sequence->getChar(i);
         else
@@ -150,7 +150,7 @@ int main(int args, char ** argv)
      * Try the following:
      */
     cout << "This sequence is coded with a " << sequence->getAlphabet()->getAlphabetType() << endl;
-    for (unsigned int i = 0; i < sequence->size(); i++)
+    for (size_t i = 0; i < sequence->size(); i++)
     {
       cout << sequence->getChar(i) << "\t" << sequence->getValue(i) << "\t" << (*sequence)[i] << endl;
     }
@@ -174,10 +174,10 @@ int main(int args, char ** argv)
       cerr << ex.what() << endl;
     }
 
-    CodonAlphabet* codonAlphabet = new StandardCodonAlphabet(&AlphabetTools::DNA_ALPHABET);
+    CodonAlphabet* codonAlphabet = new CodonAlphabet(&AlphabetTools::DNA_ALPHABET);
     Sequence* codonSequence = new BasicSequence(sequence->getName(), sequence->toString(), codonAlphabet);
     cout << "This sequence is now coded with a " << codonSequence->getAlphabet()->getAlphabetType() << endl;
-    for (unsigned int i = 0; i < codonSequence->size(); i++)
+    for (size_t i = 0; i < codonSequence->size(); i++)
     {
       cout << codonSequence->getChar(i) << "\t" << codonSequence->getValue(i) << endl;
     }
