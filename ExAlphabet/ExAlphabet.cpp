@@ -72,7 +72,7 @@ int main(int args, char ** argv)
      */
     vector<string> states = alphabet->getSupportedChars();
     cout << "Char\tInt" << endl;
-    for (unsigned int i = 0; i < states.size(); i++)
+    for (size_t i = 0; i < states.size(); i++)
     {
       cout << states[i] << "\t" << alphabet->charToInt(states[i]) << endl; 
     }
