@@ -30,9 +30,10 @@ using namespace std;
 /*
  * From bpp-seq:
  */
-#include <Bpp/Seq/Alphabet.all> /* this includes all alphabets in one shot */
-#include <Bpp/Seq/Container.all> /* this includes all containers */
-#include <Bpp/Seq/Io.all> /* this includes all sequence readers and writers */
+#include <Bpp/Seq/Alphabet/AlphabetTools.h> /* this includes alphabets classes */
+#include <Bpp/Seq/Container/SequenceContainerTools.h> /* this includes container classes */
+#include <Bpp/Seq/Container/SiteContainerTools.h> /* this includes container classes */
+#include <Bpp/Seq/Io/Fasta.h> /* this includes the fasta sequence reader and writer */
 #include <Bpp/Seq/AlphabetIndex/DefaultNucleotideScore.h>
 
 /*

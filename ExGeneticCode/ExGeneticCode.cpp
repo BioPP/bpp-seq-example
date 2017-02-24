@@ -26,8 +26,8 @@ using namespace std;
 /*
  * From bpp-seq:
  */
-#include <Bpp/Seq/Alphabet.all>
-#include <Bpp/Seq/GeneticCode.all>
+#include <Bpp/Seq/Alphabet/AlphabetTools.h>
+#include <Bpp/Seq/GeneticCode/MoldMitochondrialGeneticCode.h>
 
 /*
  * All Bio++ functions are also in a namespace, so we'll use it:

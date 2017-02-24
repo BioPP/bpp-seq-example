@@ -30,7 +30,7 @@ using namespace std;
 /*
  * From Bpp-Seq:
  */
-#include <Bpp/Seq/Alphabet.all> /* this include all alphabets in one shot */
+#include <Bpp/Seq/Alphabet/AlphabetTools.h> /* this include the definition of most alphabets */
 #include <Bpp/Seq/Sequence.h> /* this include the definition of the Sequence object */
 #include <Bpp/Seq/SequenceTools.h> /* this includes some tools to deal with sequences */
 #include <Bpp/Seq/DNAToRNA.h> /* A few transliterators here... */

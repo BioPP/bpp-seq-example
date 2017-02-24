@@ -30,7 +30,7 @@ using namespace std;
 /*
  * From bpp-seq:
  */
-#include <Bpp/Seq/Alphabet.all> /* this include all alphabets in one shot */
+#include <Bpp/Seq/Alphabet/AlphabetTools.h>
 
 /*
  * All Bio++ functions are also in a namespace, so we'll use it:
