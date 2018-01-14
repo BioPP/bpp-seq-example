@@ -130,7 +130,7 @@ int main(int args, char ** argv)
     } catch(Exception& e) {
       cerr << e.what() << endl;
     }
-    
+     
     Sequence* transSequence = SequenceTools::transcript(*sequence);
     cout << "TransSeq: " << transSequence->toString() << endl;
 
